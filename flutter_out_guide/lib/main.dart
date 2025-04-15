@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';   // importando bibliotecas 'material.da
 import 'package:provider/provider.dart';
 import 'src/models/appdata.dart';
 
+import 'src/pages/preload.dart';
 import 'src/pages/home.dart';   // importando 'página' home
 
 void main() => runApp(    // função inicial
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {   // criação do app padrão
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {   // objeto 'routes' aloca as rotas disponiveis
+        '/preload': (context) => PreloadPage(),
         '/home': (context) => HomePage()
       },
-      initialRoute: '/home',
+      initialRoute: '/preload',   // rota inicial   
     );
   }
 }
