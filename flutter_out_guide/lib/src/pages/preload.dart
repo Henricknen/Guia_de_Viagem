@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';         // importando pacote 'services'
 
 class PreloadPage extends StatefulWidget {
     @override
@@ -10,6 +11,8 @@ class _PreloadPage extends State<PreloadPage> {
 
     @override
     Widget build(BuildContext context) {
+        SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+
         return Scaffold(
             body:Center(
                 child: Column(
